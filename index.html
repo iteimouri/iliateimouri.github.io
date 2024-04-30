@@ -1,31 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Ilia Teimouri PhD</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="src/css/css-reset.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="icon" type="image/x-png" href="/res/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1" />
+  <script src="https://kit.fontawesome.com/d5effce557.js" crossorigin="anonymous"></script>
+  <title>WebShell</title>
 </head>
+
 <body>
-    <div class="grid-2">
-        <div class="section-1">
-            <i class="fas fa-code fa-5x white"></i>
-            <h2>Ilia Teimouri PhD</h2>
-            <p>London, GB.</p>
-            <a href="https://medium.com/@ilia.teimouri"><i class="fab fa-medium"></i></a>
-            <a href="https://www.linkedin.com/in/iliateimouri/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/iteimouri/"><i class="fab fa-github"></i></a>
-        </div>
-        <div class="section-2">
-            <h2>About</h2>
-            <p>Greetings, my name is Ilia. I possess a <a href="https://inspirehep.net/literature/1706131">Doctorate in Theoretical Physics,</a> focusing on String Theory and Modified Theories of Gravity. Specifically, I have extensively researched various aspects of the <a href="https://en.wikipedia.org/wiki/Infinite_derivative_gravity">Infinite Derivative Theory of Gravity.</a><br><br>After completing my PhD, I accepted a postdoctoral fellowship at <a href="https://www.bcg.com">Boston Consulting Group</a> (BCG) and the <a href="https://lims.ac.uk/ilia-teimouri/">London Institute for Mathematical Sciences,</a> where I focused on the mathematical structure of innovation. Subsequently, I served as a Scientific Consultant for BCG, guiding their <a href="https://www.bcg.com/beyond-consulting/bcg-gamma/demand-forecasting">COVID Pandemic Modelling Program.</a> I then transitioned to a Data Science Fellowship at <a href="https://faculty.ai/">Faculty,</a> followed by a role as a Data Scientist at <a href="https://www.iqvia.com/">IQVIA.</a> Currently, I am a Senior Data Scientist and Quant at <a href="https://www.ubs.com/">UBS,</a> providing cutting-edge Artificial Intelligence and mathematical-based solutions and products to various divisions of the bank. <br><br>In addition to my corporate pursuits, I am also a Co-Founder of the <a href="https://www.crunchbase.com/organization/nvesto-stock-exchange">Nvesto Stock Exchange.</a> Nvesto is an innovative platform that gamifies the stock market, allowing users to trade using cryptocurrencies to mitigate the risk associated with the cryptocurrency market's volatility. Furthermore, Nvesto also has a research aspect, which can be utilised to address various questions related to Behavioral Economics.</p> 
-            <h2>Links</h2>
-            <a href="https://scholar.google.com/citations?user=4tEeTIcAAAAJ&hl=en&oi=ao">Google Scholar |</a>
-            <a href="https://arxiv.org/search/?searchtype=author&query=Teimouri%2C+A">arXiv |</a>
-            <a href="https://inspirehep.net/authors/1283924">Inspire HEP</a>
-        </div>
+  <main id="main">
+    <div id="bars">
+      <div id="bar-1">WebShell.x64_x86</div>
+      <div id="bar-2"></div>
+      <div id="bar-3"></div>
+      <div id="bar-4"></div>
+      <div id="bar-5"></div>
     </div>
+    <br>
+    <div id="terminal">
+      <div>
+        <span id="prompt"><span id="pre-user"></span>@<span id="pre-host"></span>:$ ~ </span>
+      </div>
+      <!-- command output will be inserted before #write-lines-->
+      <a id="write-lines"></a>
+    </div>
+    <div id="input-line">
+      <div>
+        <p id="password-input" style="display: none;">Password: <input id="password-field" autocomplete="off"
+            type="password" /></p>
+        <p id="input-hidden">
+          <span id="prompt"><span id="user"></span>@<span id="host"></span>:$ ~
+          </span>
+          <input id="user-input" type="text" enterkeyhint="Enter" spellcheck="false" autocapitalize="none"
+            autocomplete="off" />
+        </p>
+      </div>
+      <br>
+    </div>
+  </main>
 </body>
+
+<script type="module" src="./src/styles.ts"></script>
+<script type="module" src="./src/main.ts"></script>
+
 </html>
